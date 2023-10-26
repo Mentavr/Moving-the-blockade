@@ -10,7 +10,6 @@ const Block = () => {
         if(coordinatesBlock) {
             setDraggingMouse({ x : draggingsMouse.x + e.movementX, y : draggingsMouse.y + e.movementY})
         }
-        // console.log('start coordinatesMouse', coordinatesMouse)
     }
         useEffect(() => {
             if (ref.current) {
@@ -19,24 +18,7 @@ const Block = () => {
             }
           }, [draggingsMouse])
 
-    // const hendleDown = (e) => {
-    //     console.log('start', e)
-    //     setCoordinatesBlock({x: draggingsMouse.x, y: draggingsMouse.y})
-    //     console.log('start coordinatesBlock', coordinatesBlock)
-    // }
-
-    // const hendleUp = (e) => {
-    //     console.log('stop', e)
-    //     setCoordinatesBlock({x: draggingsMouse.x, y: draggingsMouse.y})
-    //     console.log('stop coordinatesBlock', coordinatesBlock)
-    // }
-
-    // const styleBlock = () => {
-    //     if (coordinatesBlock) return { left: draggingsMouse.x, top: draggingsMouse.y }
-    // }
-
-    // console.log('ref', ref.current)
-
+          
     return (
         <div
             className='block_warper'
