@@ -1,0 +1,22 @@
+
+.block_warper{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.block{
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+
+    position: absolute;
+    top:45%; 
+    left: 45%;
+}
+.block:hover{
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: lightblue
+}
